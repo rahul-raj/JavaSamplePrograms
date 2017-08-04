@@ -35,20 +35,10 @@ public class BinarySearchTreeNode {
       node=insertNode(node,10);
         node=insertNode(node,11);
         node=insertNode(node,9);
-      //node=insertNode(node,8);
-      //node=insertNode(node,9);
-      //node=insertNode(node,13);
-      //node=insertNode(node,16);
-      //node=insertNode(node,12);
         System.out.println(node.data);
       System.out.println(node.left.data);
         System.out.println(node.left.right.data);
         System.out.println(node.left.left.data);
 
-        //System.out.println(node.left.data);
-        //System.out.println(node.left.right.data);
-        //System.out.println(node.right.data);
-        //System.out.println(node.right.right.data);
-        //System.out.println(node.right.left.data);
     }
 }

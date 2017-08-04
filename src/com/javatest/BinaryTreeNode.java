@@ -108,15 +108,12 @@ public class BinaryTreeNode {
         binaryTreeNode =insertNode(binaryTreeNode,"LR",5);
         binaryTreeNode =insertNode(binaryTreeNode,"RL",6);
         binaryTreeNode =insertNode(binaryTreeNode,"RR",7);
-        //System.out.println(binaryTreeNode.right.left.data);
-        //System.out.println(binaryTreeNode.right.right.data);
-       // printPreOder(binaryTreeNode);
         System.out.println(diameter(binaryTreeNode));
         binaryTreeNode=removeNode(binaryTreeNode,7);
         binaryTreeNode=removeNode(binaryTreeNode,6);
         System.out.println("**********************************");
         System.out.println(diameter(binaryTreeNode));
-       // printPreOder(binaryTreeNode);
+
 
     }
 
