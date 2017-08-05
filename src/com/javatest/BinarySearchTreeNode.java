@@ -15,6 +15,7 @@ public class BinarySearchTreeNode {
         this.right=null;
     }
 
+    //insert node into a binary search tree.
     static BinarySearchTreeNode insertNode(BinarySearchTreeNode binarySearchTreeNode, int data){
         if(binarySearchTreeNode!=null){
             if(binarySearchTreeNode.data<data){
@@ -31,6 +32,7 @@ public class BinarySearchTreeNode {
 
     }
 
+    //search for a node in binary search tree. Returns a path in string format if exists, else return null
     static StringBuilder searchNode(BinarySearchTreeNode binarySearchTreeNode,int data){
 
         if(binarySearchTreeNode!=null){
@@ -50,6 +52,7 @@ public class BinarySearchTreeNode {
             return new StringBuilder("");
     }
 
+    //search for mirror nodes in binary search tree, return mirror image data if exists, else return -1
     static int findMirrorNode(BinarySearchTreeNode binarySearchTreeNode, String path){
         int mirrorImage=-1;
         if(binarySearchTreeNode!=null && path == null){
@@ -81,6 +84,7 @@ public class BinarySearchTreeNode {
         node=insertNode(node,11);
         node=insertNode(node,9);
         node=insertNode(node,13);
+        System.out.println(searchNode(node,10));
         System.out.println(findMirrorNode(node,searchNode(node,11).toString()));
 
     }
